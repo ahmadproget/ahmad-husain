@@ -502,6 +502,7 @@
     .scrollable-text {
         flex: 1;              
         overflow-y: auto;     
+        padding-left: 10px;
         padding-right: 10px; 
         scrollbar-width:thin;
     }
@@ -778,7 +779,7 @@
             gap: 0;
         }
         .custom-card-width{
-            width: 300px;
+            width: 328px;
         }
         .card-wrapper{
             justify-items: center;
@@ -1209,12 +1210,12 @@
         }
     }
 
-    /*setTimeout(function() {
+    setTimeout(function() {
         let alert = document.querySelector('.alert');
         if (alert) {
             alert.style.display = 'none';
         }
-    }, 5000);*/
+    }, 5000);
 
     document.addEventListener("DOMContentLoaded", function () {
 
