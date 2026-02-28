@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
-use Brevo\Client\Configuration;
-use Brevo\Client\Api\TransactionalEmailsApi;
-use Brevo\Client\Model\SendSmtpEmail;
+// Brevo/SendinBlue library ke sahi namespaces:
+use SendinBlue\Client\Configuration;
+use SendinBlue\Client\Api\TransactionalEmailsApi;
+use SendinBlue\Client\Model\SendSmtpEmail;
 
 class ContactController extends Controller
 {
@@ -26,12 +27,14 @@ class ContactController extends Controller
         ];
 
         try {
+            // API Key ko Render Environment Variables se uthayega
             $config = Configuration::getDefaultConfiguration()->setApiKey('api-key', env('BREVO_API_KEY'));
             $apiInstance = new TransactionalEmailsApi(new Client(), $config);
 
-           
+            // Aapka khubsurat design wala template render karein
             $htmlContent = view('emails.contact', ['details' => $details])->render();
 
+            // Email bhejne ka structure
             $sendSmtpEmail = new SendSmtpEmail([
                 'subject' => $request->subject,
                 'sender'  => ['name' => $request->name, 'email' => $request->email],
@@ -39,11 +42,13 @@ class ContactController extends Controller
                 'htmlContent' => $htmlContent
             ]);
 
+            // API ke through email bhej rahe hain (SMTP connection ki zarurat nahi)
             $apiInstance->sendTransacEmail($sendSmtpEmail);
 
             return redirect()->to(url()->previous() . '#contact')->with('message_sent', 'Message Sent!');
             
         } catch (\Exception $e) {
+            // Agar koi error aaye, toh wahi page par error dikhayein
             return back()->withErrors(['msg' => 'Error: ' . $e->getMessage()]);
         }
     }    
