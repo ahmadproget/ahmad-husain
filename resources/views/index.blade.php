@@ -1209,12 +1209,13 @@
         }
     }
 
-    setTimeout(function() {
+    /*setTimeout(function() {
         let alert = document.querySelector('.alert');
         if (alert) {
             alert.style.display = 'none';
         }
-    }, 5000);
+    }, 5000);*/
+
     document.addEventListener("DOMContentLoaded", function () {
 
 
