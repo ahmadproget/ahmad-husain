@@ -41,7 +41,6 @@
                 </ul>
 
                 <div class="d-flex align-items-center gap-3 social-icons">
-                    <a href="https://www.instagram.com/__ahmad__oo7/" target="_blank" ><i class="bi bi-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/ahmad-husain-0928743b3/" target="_blank" ><i class="bi bi-linkedin"></i></a>
                     <a href="https://github.com/Ahmad007Designer" target="_blank"><i class="bi bi-github"></i></a>
                     <div class="vr" style="height: 30px;"></div>
@@ -118,9 +117,6 @@
                             </ul>
                         </div>
                         <div class="social-links mb-5">
-                            <a href="https://www.instagram.com/__ahmad__oo7/" target="_blank" class="social-icon ">
-                                <i class="bi bi-instagram ml-2"></i>
-                            </a>
                             <a href="https://github.com/Ahmad007Designer" target="_blank" class="social-icon">
                                 <i class="bi bi-github"></i>
                             </a>
@@ -131,7 +127,6 @@
                                 <i class="bi bi-envelope-fill"></i>
                             </a>
                         </div>
-
                         <a  href="resume/Ahmad_Resume.pdf" target="_blank" class="btn btn-dark">See my resume</a>
 
                     </div>
@@ -371,7 +366,6 @@
                         <li class="mt-3 text-grey"><a href="mailto:ahmadmohdrock007@gmail.com?subject=Inquiry from Portfolio" target="_blank">Email</a></li>
                         <li class="mt-3 text-grey"><a href="https://www.linkedin.com/in/ahmad-husain-0928743b3/" target="_blank">LinkedIn</a></li>
                         <li class="mt-3 text-grey"><a href="https://github.com/Ahmad007Designer" target="_blank">GitHub</a></li>
-                        <li class="mt-3 text-grey"><a href="https://www.instagram.com/__ahmad__oo7/" target="_blank">Instagram</a></li>
                     </ul>
                 </div>
 
