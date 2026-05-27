@@ -41,7 +41,9 @@
                 </ul>
 
                 <div class="d-flex align-items-center gap-3 social-icons">
-                    <a href="https://www.linkedin.com/in/ahmad-husain-0928743b3/" target="_blank" ><i class="bi bi-linkedin"></i></a>
+                    {{-- <a href="https://www.linkedin.com/in/ahmad-husain-0928743b3/" target="_blank" ><i class="bi bi-linkedin"></i></a> --}}
+                    <a href="https://wa.me/919335537142" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    <a href="mailto:ahmadmohdrock007@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
                     <a href="https://github.com/Ahmad007Designer" target="_blank"><i class="bi bi-github"></i></a>
                     <div class="vr" style="height: 30px;"></div>
                     <button class="btn btn-link nav-link p-0" onclick="toggleTheme()">
@@ -49,8 +51,6 @@
                     </button>
                 </div>
             </div>
-                   
-
         </div>
     </nav>
     <section class="hero-section section-padding" id="hero">
@@ -75,11 +75,12 @@
     <section id="about" class="about-section section-padding">
         <div class="container">
             <div class="row inner-section">
-                 <h2 class="heading-text mb-2">About Me</h2>
+                
                 <div class=" col-12 col-lg-4 profile-image-container">
                     <img class="profile-image" src="images/Ahmad.png" alt="Ahmad Husain">
                 </div>
                 <div class="col-12 col-lg-8 padding-left About-wrapper">
+                    <h2 class="heading-text mb-2">About Me</h2>
                     <div class="scrollable-text">
                         <p class="captilize-text font-size20" >who am <span class="text-heiglight text-orange">i ?</span></p>
                         <p class="captilize-text text-heiglight font-size22"> I'm Ahmad Husain, a <span class="text-orange">Junior Web Developer</span> with <span class="text-orange">full-stack expertise</span>
@@ -120,9 +121,10 @@
                             <a href="https://github.com/Ahmad007Designer" target="_blank" class="social-icon">
                                 <i class="bi bi-github"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/ahmad-husain-0928743b3/" target="_blank" class="social-icon">
+                            {{-- <a href="https://www.linkedin.com/in/ahmad-husain-0928743b3/" target="_blank" class="social-icon">
                                 <i class="bi bi-linkedin"></i>
-                            </a>
+                            </a> --}}
+                            <a href="https://wa.me/919335537142" target="_blank" class="social-icon"><i class="bi bi-whatsapp"></i></a>
                             <a href="mailto:ahmadmohdrock007@gmail.com" class="social-icon">
                                 <i class="bi bi-envelope-fill"></i>
                             </a>

@@ -485,7 +485,7 @@ body {
     padding-left: 50px;
 }
 .About-wrapper {
-    height: 440px;
+    height: 500px;
     display: flex;
     flex-direction: column;
 }
